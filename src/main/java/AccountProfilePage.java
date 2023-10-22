@@ -1,12 +1,10 @@
-package praktikum;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AccountProfilePage {
-    public static final String PAGE_URL = "https://stellarburgers.nomoreparties.site/account/profile";
+    public static final String PROFILE_PAGE = "https://stellarburgers.nomoreparties.site/account/profile";
     private final By profileLink = By.xpath(".//a[text()='Профиль']");
     private final By exitButton = By.xpath(".//button[text()='Выход']");
     private final By constructorButton = By.xpath(".//p[text()='Конструктор']");

@@ -1,12 +1,10 @@
-package praktikum;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
-    public static final String PAGE_URL = "https://stellarburgers.nomoreparties.site/login";
+    public static final String LOGIN_PAGE = "https://stellarburgers.nomoreparties.site/login";
     public final By registerButton = By.xpath(".//a[text()='Зарегистрироваться']");
     private final By emailField = By.xpath(".//input[@type='text']");
     private final By passwordField = By.xpath(".//input[@type='password']");
@@ -39,7 +37,7 @@ public class LoginPage {
     }
 
     public void open() {
-        driver.get(PAGE_URL);
+        driver.get(LOGIN_PAGE);
     }
 
     public void waitLoginPage() {

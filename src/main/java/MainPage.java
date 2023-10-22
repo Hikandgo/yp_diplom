@@ -1,12 +1,10 @@
-package praktikum;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MainPage {
-    public static final String PAGE_URL = "https://stellarburgers.nomoreparties.site/";
+    public static final String FIRST_PAGE = "https://stellarburgers.nomoreparties.site/";
     private final By bulkiButton = By.xpath(".//span[text()='Булки']/..");
     private final By souseButton = By.xpath(".//span[text()='Соусы']/..");
     private final By nachinkiButton = By.xpath(".//span[text()='Начинки']/..");
@@ -21,7 +19,7 @@ public class MainPage {
     }
 
     public void open() {
-        driver.get(PAGE_URL);
+        driver.get(FIRST_PAGE);
     }
 
     public void clickLoginLkLink() {

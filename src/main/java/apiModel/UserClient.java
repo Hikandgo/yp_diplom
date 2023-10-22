@@ -1,4 +1,4 @@
-package praktikum;
+package apiModel;
 
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
@@ -7,6 +7,8 @@ public class UserClient {
     private final static String API_AUTH_REGISTER = "/api/auth/register";
     private final static String API_AUTH_LOGIN = "/api/auth/login";
     private final static String API_AUTH_USER = "/api/auth/user";
+
+    public final static String BASE_URL = "https://stellarburgers.nomoreparties.site/";
 
     public UserClient() {
     }

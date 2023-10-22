@@ -1,10 +1,8 @@
-package praktikum;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class RegisterPage {
-    public static String PAGE_URL = "https://stellarburgers.nomoreparties.site/register";
+    public static String REGISTER_PAGE = "https://stellarburgers.nomoreparties.site/register";
     private final By loginButton = By.xpath(".//a[text()='Войти']");
     private final By loginError = By.xpath(".//p[text()='Некорректный пароль']");
     private final By nameField = By.xpath(".//label[text()='Имя']/../input");
@@ -38,7 +36,7 @@ public class RegisterPage {
     }
 
     public void open() {
-        driver.get(PAGE_URL);
+        driver.get(REGISTER_PAGE);
     }
 
     public boolean loginErrorDisplayed() {
