@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3cae32f-4600-4eb3-bd16-09ed310962f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/apiModel/BaseConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/apiModel/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiModel/CreateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/apiModel/CreateUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiModel/CreateUserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/apiModel/Ingredients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiModel/Ingredients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/apiModel/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiModel/LoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/apiModel/OrderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiModel/OrderClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/apiModel/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiModel/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/apiModel/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiModel/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/praktikum/Bun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/praktikum/Burger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/praktikum/Database.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/praktikum/Ingredient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/praktikum/IngredientType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/praktikum/Praktikum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiModel/CreateOrdersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiModel/CreateOrdersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiModel/CreateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiModel/CreateUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiModel/GetOrdersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiModel/GetOrdersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiModel/LoginUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiModel/LoginUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiModel/UpdateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiModel/UpdateUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/praktikum/BunTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/praktikum/BurgerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/praktikum/IngredientTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2WZqXA6PGoD99ri1M2URWGr9L5G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="apiModel" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3cae32f-4600-4eb3-bd16-09ed310962f5" name="Changes" comment="" />
+      <created>1696950487230</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696950487230</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
