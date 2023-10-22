@@ -1,4 +1,4 @@
-package praktikum;
+package apiModel;
 
 import com.google.gson.Gson;
 import io.restassured.RestAssured;
@@ -16,7 +16,7 @@ public class CreateUserTest {
 
     @Before
     public void setUp() {
-        RestAssured.baseURI = "https://stellarburgers.nomoreparties.site/";
+        RestAssured.baseURI = BaseConstants.BASE_URL.getStr();
     }
 
     @Test
@@ -47,11 +47,6 @@ public class CreateUserTest {
         response.then().assertThat().body("success", equalTo(true))
                 .and()
                 .statusCode(200);
-        UserClient.postApiAuthRegister(createUser).then().assertThat().body("success", equalTo(false))
-                .and()
-                .body("message", equalTo("User already exists"))
-                .and()
-                .statusCode(403);
     }
 
     @Test

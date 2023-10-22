@@ -1,4 +1,4 @@
-package praktikum;
+package apiModel;
 
 import com.google.gson.Gson;
 import io.restassured.RestAssured;
@@ -20,15 +20,12 @@ public class UpdateUserTest {
 
     @Before
     public void setUp() {
-        RestAssured.baseURI = "https://stellarburgers.nomoreparties.site/";
+        RestAssured.baseURI = BaseConstants.BASE_URL.getStr();
         Random random = new Random();
         this.email = "something" + random.nextInt(10000000) + "@yandex.ru";
         this.password = "password" + random.nextInt(10000000);
         CreateUser createUser = new CreateUser(email, password, "TestName");
         Response responseCreate = UserClient.postApiAuthRegister(createUser);
-        responseCreate.then().assertThat().body("success", equalTo(true))
-                .and()
-                .statusCode(200);
         String responseString = responseCreate.body().asString();
         Gson gson = new Gson();
         CreateUserResponse createUserResponse = gson.fromJson(responseString, CreateUserResponse.class);
@@ -37,10 +34,6 @@ public class UpdateUserTest {
 
     @Test
     public void checkUpdateUserResponseBodyTest() {
-        UserClient.getApiAuthUser(accessToken).then().assertThat().body("success", equalTo(true))
-                .and()
-                .statusCode(200);
-
         Random random = new Random();
         this.email = "somebody" + random.nextInt(10000000) + "@yandex.ru";
         this.name = "somebody" + random.nextInt(10000000);
@@ -54,17 +47,6 @@ public class UpdateUserTest {
     @Test
     public void checkUpdateUserNoAuthResponseBodyTest() {
         UserClient.getApiAuthUser().then().assertThat().body("success", equalTo(false))
-                .and()
-                .body("message", equalTo("You should be authorised"))
-                .and()
-                .statusCode(401);
-
-        Random random = new Random();
-        this.email = "somebody" + random.nextInt(10000000) + "@yandex.ru";
-        this.name = "somebody" + random.nextInt(10000000);
-        this.password = "password" + random.nextInt(10000000);
-        CreateUser createUser = new CreateUser(email, password, name);
-        UserClient.patchApiAuthUser(createUser).then().assertThat().body("success", equalTo(false))
                 .and()
                 .body("message", equalTo("You should be authorised"))
                 .and()

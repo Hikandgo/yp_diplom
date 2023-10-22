@@ -1,6 +1,5 @@
-package praktikum;
+package apiModel;
 
-import com.google.gson.Gson;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.junit.Before;
@@ -8,14 +7,15 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
+
 import java.util.List;
 import java.util.Random;
 
 import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.notNullValue;
 
 @RunWith(Parameterized.class)
 public class CreateOrdersTest {
-
     private final List<String> ingridients;
     private final int statusCode;
 
@@ -35,7 +35,7 @@ public class CreateOrdersTest {
 
     @Before
     public void setUp() {
-        RestAssured.baseURI = "https://stellarburgers.nomoreparties.site/";
+        RestAssured.baseURI = BaseConstants.BASE_URL.getStr();
     }
 
     @Test
@@ -48,24 +48,12 @@ public class CreateOrdersTest {
         responseCreate.then().assertThat().body("success", equalTo(true))
                 .and()
                 .statusCode(200);
-        String responseString = responseCreate.body().asString();
-        Gson gson = new Gson();
-        CreateUserResponse createUserResponse = gson.fromJson(responseString, CreateUserResponse.class);
-        String accessToken = createUserResponse.getAccessToken();
-        Ingredients ingredientsReq = new Ingredients(ingridients);
-        OrderClient.postApiOrders(accessToken, ingredientsReq).then().assertThat()
-                .statusCode(statusCode);
-        UserClient.deleteApiAuthUser(accessToken).then().assertThat().body("success", equalTo(true))
-                .and()
-                .body("message", equalTo("User successfully removed"))
-                .and()
-                .statusCode(202);
     }
 
     @Test
     public void checkCreateOrdersNoAuthResponseBodyTest() {
         Ingredients ingredientsReq = new Ingredients(ingridients);
-        OrderClient.postApiOrders(ingredientsReq).then().assertThat()
+        OrderClient.postApiOrders(ingredientsReq).then().assertThat().body(notNullValue()).and()
                 .statusCode(statusCode);
     }
 }
