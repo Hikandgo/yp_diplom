@@ -9,7 +9,7 @@ import org.junit.runners.Parameterized;
 public class BunTest {
     private final String name;
     private final float price;
-    private final static double DELTA = 0.01;
+    public final static double DELTA = 0.01;
 
     public BunTest(String name, float price) {
         this.name = name;
@@ -19,8 +19,9 @@ public class BunTest {
     @Parameterized.Parameters
     public static Object[][] params() {
         return new Object[][]{
-                {"КебабТести", 111.2f},
-                {"КульбитТусти", 123.0f}
+                {"КебабТести", 0.1f},
+                {"КульбитТусти", 123.0f},
+                {"", 11}
         };
     }
 

@@ -10,9 +10,10 @@ import org.mockito.junit.MockitoJUnitRunner;
 import java.util.ArrayList;
 import java.util.List;
 
+import static praktikum.BunTest.DELTA;
+
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTest {
-    private final static double DELTA = 0.01;
 
     @Mock
     private Bun bun;

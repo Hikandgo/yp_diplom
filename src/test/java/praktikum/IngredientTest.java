@@ -3,10 +3,12 @@ package praktikum;
 import org.junit.Test;
 import org.junit.Assert;
 
+import static praktikum.BunTest.DELTA;
+
 
 public class IngredientTest {
     private IngredientType ingredientType;
-    private final static double DELTA = 0.01;
+
     @Test
     public void getPriceTest() {
         Ingredient ingredient = new Ingredient(ingredientType, "первый", 2.7f);
